@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    <p>Thank you! ${name} for contacting us. We should receive reply from us with in 24 hrs in your email address ${email}. Let us know in our support email ${supportEmail} if you don’t receive reply within 24 hrs. Please be sure to attach your reference ${token} in your email.</p>
+    <p>Thank you! <%= request.getParameter("name") %> for contacting us. We should receive reply from us with in 24 hrs in your email address <%= request.getParameter("email") %>. Let us know in our support email <%= request.getParameter("supportEmail") %> if you don’t receive reply within 24 hrs. Please be sure to attach your reference <%= request.getParameter("token") %> in your email.</p>
 </body>
 </html>
